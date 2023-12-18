@@ -1,13 +1,5 @@
 import re
 
-def multiply_list(input):
-    ret = 1
-
-    for x in input:
-        ret *= x
-    
-    return ret
-
 if __name__ == "__main__":
     file = open("input.txt")
     lines = file.readlines()
@@ -29,6 +21,11 @@ if __name__ == "__main__":
     total_part_two = 0
     for index in symbols.values():
         if len(index) == 2:
-            total_part_two += multiply_list(index)
+            product = 1
+
+            for x in index:
+                product *= x
+
+            total_part_two += product
 
     print(total_part_two)        
