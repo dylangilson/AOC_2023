@@ -7,7 +7,7 @@
 - [License](#license)
 
 ## AOC 2023
-Advent of Code 2023 written in Python 3
+Advent of Code 2023 written in Python 3.7
 
 ## Compilation and Running
 * change directory to the 'Day ##' folder of the project, then running the following commands:
