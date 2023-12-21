@@ -18,7 +18,7 @@ if __name__ == "__main__":
         for i in range(wins):
             tickets[index + i + 1] += tickets[index]
 
-    # print(part_one_total)
+    print(part_one_total)
 
     part_two_total = sum(tickets)
 
