@@ -35,5 +35,8 @@ if __name__ == "__main__":
     mappings = seeds[1:]
     seeds = list(map(int, seeds[0].split()[1:]))
 
-    print(min(reduce(part_one, mappings, int(s)) for s in seeds))
-    print([min(reduce(part_two, mappings, s))[0] for s in [zip(seeds, [1] * len(seeds)), zip(seeds[0::2], seeds[1::2])]][1])
+    part_one_total = min(reduce(part_one, mappings, int(s)) for s in seeds)
+    print(part_one_total)
+
+    part_two_total = [min(reduce(part_two, mappings, s))[0] for s in [zip(seeds, [1] * len(seeds)), zip(seeds[0::2], seeds[1::2])]][1]
+    print(part_two_total)
