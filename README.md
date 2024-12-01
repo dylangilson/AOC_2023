@@ -10,7 +10,7 @@
 Advent of Code written in Python 3.7
 
 ## Compilation and Running
-* change directory to the 'Day ##' folder of the project, then running the following commands:
+* change directory to the 'Year/Day #' folder of the project, then running the following commands:
 
 ```sh
 python3 main.py
