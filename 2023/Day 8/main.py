@@ -1,7 +1,7 @@
 from functools import reduce
 from math import gcd
 
-def part_one():
+def part_one(lines, a, left, right):
 	steps = 0
 	start = 'AAA'
 	
@@ -19,7 +19,7 @@ def part_one():
 def lcm(a, b):
 	return a * b // gcd(a, b)
 
-def part_two():
+def part_two(lines, a, left, right):
 	nodes = [i for i in a if i[2]=='A']
 	steps = 0
 	count_z = 0
@@ -53,5 +53,5 @@ if __name__ == '__main__':
 	left = [i[7:10] for i in network]
 	right = [i[12:15] for i in network]
 
-	part_one()
-	part_two()
+	part_one(lines, a, left, right)
+	part_two(lines, a, left, right)
