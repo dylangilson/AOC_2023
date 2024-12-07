@@ -53,7 +53,7 @@ def part_two(lines):
 
             if (next_position, direction) in visited_positions:
                 loop = True
-                breakcd
+                break
 
             visited_positions.add((next_position, direction))
 
